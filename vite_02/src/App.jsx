@@ -9,8 +9,11 @@ function App() {
 
   const addValue = ()=> {
     if (count < 20) {
-      count += 1;
+      count ++;
       setCount(count)
+
+      // setCount(preCount => preCount+1)
+      // setCount(preCount => preCount+1)
     } else {
       setCount(20);
     }
@@ -21,7 +24,7 @@ function App() {
 
   const removeValue = ()=> {
     if (count > 0) {
-      count -= 1;
+      count --;
       setCount(count)
     } else {
       setCount(0);
